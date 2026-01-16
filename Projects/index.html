@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter David Ade | Graphic Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00bcd4;
+      --dark: #111;
+      --light: #f4f4f4;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111, #222);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      position: relative;
+    }
+
+    section h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 5px;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: var(--card);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .project-card .content {
+      padding: 20px;
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .skills-list li {
+      background: var(--card);
+      padding: 15px;
+      border-left: 5px solid var(--primary);
+      border-radius: 6px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    .contact a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav { flex-wrap: wrap; gap: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Peter David Ade</h1>
+  <p>Graphic Designer • Branding • Social Media • Photoshop Expert</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p class="about">
+    I am a creative graphic designer with a strong passion for visual storytelling. I specialize in branding, social media design, flyers, photo manipulation, and professional business designs. My goal is to create clean, modern, and high-impact visuals that help brands stand out. Below are some Projects (Not All)
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-16 100159.png" alt="Brand Design">
+      <div class="content">
+        <h3>Brand Design</h3>
+        <p>Professional logo and brand identity design.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-16 100411.png" alt="Social Media Design">
+      <div class="content">
+        <h3>Social Media Flyer</h3>
+        <p>High-converting Instagram and promotional designs.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-16 110540.png" alt="Photo Manipulation">
+      <div class="content">
+        <h3>Photo Manipulation</h3>
+        <p>Advanced Photoshop editing and retouching.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2025-12-12 104502.png" alt="Birthday Flyer">
+      <div class="content">
+        <h3>Birthday Flyer</h3>
+        <p>Creative and eye-catching social media flyers.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-14 185232.png" alt="Certificates">
+      <div class="content">
+        <h3>Certificates</h3>
+        <p>Professional business and training certificates.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-07 101819.png" alt="Food Design">
+      <div class="content">
+        <h3>Food Brand Designs</h3>
+        <p>Modern food and restaurant brand visuals.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-16 100623.png" alt="Food Design">
+      <div class="content">
+        <h3>Food Brand Designs</h3>
+        <p>Modern food and restaurant brand visuals.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-16 100138.png" alt="Food Design">
+      <div class="content">
+        <h3>Party Designs</h3>
+        <p>Modern Party brand visuals.</p>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-16 100301.png" alt="Food Design">
+      <div class="content">
+        <h3>Confrence</h3>
+        <p>Modern Confrence brand visuals.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-16 102708.png" alt="Food Design">
+      <div class="content">
+        <h3>Phone Business</h3>
+        <p>Business brand visuals.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-16 102647.png" alt="Food Design">
+      <div class="content">
+        <h3>Food Brand Designs</h3>
+        <p>Modern food and restaurant brand visuals.</p>
+      </div>
+    </div>
+
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-16 100710.png" alt="Food Design">
+      <div class="content">
+        <h3>Happy New Week</h3>
+        <p>Happy New Week visuals.</p>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <img src="Images/Screenshot 2025-12-30 145622.png" alt="Food Design">
+      <div class="content">
+        <h3>Social Media Flyer</h3>
+        <p>Christmas Cross Over</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2025-12-17 121614.png" alt="Food Design">
+      <div class="content">
+        <h3>Business Flyer</h3>
+        <p>Perfume visuals.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-14 131421.png" alt="Food Design">
+      <div class="content">
+        <h3>Business Visuals</h3>
+        <p>Business Advertizement.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-16 124410.png" alt="Food Design">
+      <div class="content">
+        <h3>Social Media </h3>
+        <p>Social Media Graphics.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-16 100510.png" alt="Food Design">
+      <div class="content">
+        <h3>Construction </h3>
+        <p>Construction Poster Design.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Images/Screenshot 2026-01-01 004938.png" alt="Food Design">
+      <div class="content">
+        <h3>Happy New Year </h3>
+        <p>Happy New Year Poster Design.</p>
+      </div>
+    </div>
+
+     
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    <li>Adobe Photoshop</li>
+    <li>Adobe Illustrator</li>
+    <li>Brand Identity Design</li>
+    <li>Social Media Graphics</li>
+    <li>Photo Retouching</li>
+    <li>Flyer & Poster Design</li>
+  </ul>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:peterdavidade@gmail.com">peterdavidade@gmail.com</a></p>
+  <p>Phone / WhatsApp: <a href="tel:+233598242203">+233 598 242 203</a></p>
+</section>
+
+<footer>
+  <p>© 2026 Peter David Ade • Graphic Designer</p>
+</footer>
+
+</body>
+</html>
